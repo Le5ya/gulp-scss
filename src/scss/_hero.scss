@@ -1,0 +1,86 @@
+.hero {
+	padding-top: 0;
+	padding-bottom: 90px;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__panel {
+		max-width: 480px;
+		padding: 137px 0 25px 50px;
+		display: flex;
+		flex-direction: column;
+		gap: 81px;
+	}
+	&__anonce {
+		font-family: Comfortaa;
+		font-style: normal;
+		line-height: 60px;
+		font-weight: 400;
+		padding: 0;
+	}
+	&__text {
+		&_orange {
+			font-size: 60px;
+			margin-bottom: 14px;
+			color: $color-main;
+		}
+	}
+	&__text {
+		font-size: 48px;
+	}
+	&__image {
+		width: 580px;
+		height: 580px;
+	}
+	&__thumbs {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding-top: 100px;
+		padding-bottom: 70px;
+	}
+	&__thumb {
+		display: flex;
+		align-items: center;
+		gap: 19px;
+	}
+}
+.paw-button {
+	max-width: 180px;
+	height: 155px;
+	border: none;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+}
+.paw-icon {
+	width: 111px;
+	margin: 0 auto;
+}
+.howto {
+	width: 100%;
+	color: $color-main;
+	text-align: center;
+	font-family: HelveticaNeueCyr;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 550;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+.thumb {
+	&__img {
+		width: 80px;
+		height: 80px;
+	}
+	&__name {
+		color: $color-primary;
+		font-family: HelveticaNeueCyr;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 24px;
+	}
+}
+

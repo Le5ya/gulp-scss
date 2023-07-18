@@ -1,0 +1,140 @@
+.help {
+	padding: 174px 0;
+	background-color: #f2f0f1;
+	&__title {
+		text-align: center;
+		margin-bottom: 50px;
+		color: $color-orange;
+	}
+	&__subtitle {
+		font-family: 'Helvetica Neue Cyr Roman', sans-serif;
+		font-weight: 400;
+		font-size: 30px;
+		line-height: 40px;
+		padding: 0 47px;
+		margin-bottom: 20px;
+	}
+	&__list {
+		margin-bottom: 50px;
+	}
+	&__item {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&:first-child {
+			margin-bottom: 120px;
+		}
+		&:nth-child(1) {
+			.help {
+				&__images {
+					height: 297px;
+					grid-template-rows: repeat(2, 1fr);
+					grid-template-columns: 180px 380px;
+				}
+				&__img:nth-child(1) {
+					grid-column: 1 / 2;
+					grid-row: 1 / 2;
+				}
+				&__img:nth-child(2) {
+					grid-column: 1 / 2;
+					grid-row: 2 / 3;
+				}
+				&__img:nth-child(3) {
+					grid-column: 2 / 3;
+					grid-row: 1 / 3;
+				}
+			}	
+		}
+		&:nth-child(2) {
+			padding-top: 60px;
+			margin-bottom: 50px;
+			.help {
+				&__texts {
+					max-width: 580px;
+					height: 330px;
+					padding-top: 96px;
+				}
+				&__wrapper {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					gap: 20px;
+				}
+			}
+		}
+		&:nth-child(3) {
+			.help {
+				&__images {
+					grid-template-columns: repeat(2, 280px);
+					grid-template-rows: repeat(2, 181px);
+					height: 382px;
+				}
+				&__image:nth-child(1) {
+					grid-column: 1 ;
+					grid-row: 1 ;
+				}
+				&__image:nth-child(2) {
+					grid-column: 2 ;
+					grid-row: 1 ;
+				}
+				&__image:nth-child(3) {
+					grid-column: 2 ;
+					grid-row: 2 ;
+				}
+			}
+		}
+		&:last-child {
+			padding-bottom: 69px;
+		}	
+	}
+	&__number-plate {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		background-color: $color-white;
+		padding: 15px 30px;
+		&_3 {
+			top: 50px;
+		}
+	}
+	&__number {
+		font-size: 50px;
+		line-height: 50px;
+		color: $color-orange;
+	}
+	&__description {
+		padding-left: 47px;
+	}
+	&__text {
+		padding-bottom: 20px;
+		&_width_less {
+			padding-left: 40px;
+			max-width: 480px;
+		}
+	}
+	&__images {
+		display: grid;
+		max-width: 580px;
+		gap: 20px;
+	}
+	&__wrap {
+		display: flex;
+		justify-content: center;
+	}
+}
+li {
+	&:nth-child(2) {
+		.help {
+			&__subtitle {
+				padding-left: 100px;
+				margin-bottom: 50px;
+			}
+		}
+		
+	}
+}
+

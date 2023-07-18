@@ -1,0 +1,139 @@
+.contacts {
+	font-family: 'HelveticaNeueCyr';
+	padding: 121px 0;
+	background-color: $color-white;
+	&__plate {
+		width: 780px;
+		min-height: 592px;
+		border-radius: 20px;
+		margin: 0 auto;
+		padding: 50px 100px;
+    background-color: #f2f0f1;
+	}
+	&__container {
+		width: 580px;
+		min-height: 492px;
+		padding: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__title {
+		font-family: 'Comfortaa';
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 133%;
+		text-align: center;
+		color: #F2994A;
+		margin-bottom: 30px;
+	}
+	&__text {
+		padding-left: 16px;
+		margin-bottom: 16px;
+	}
+	&__adress {
+		display: block;
+		margin-bottom: 30px;
+	}
+	&__form {
+		text-align: center;
+	}
+}
+.text {
+	&__span {
+		color: #f2994a;
+		font-weight: 700;
+	}
+}
+.adress__list {
+	display: flex;
+	justify-content: space-between;
+}
+.adress {
+	&__item {
+		position: relative;
+		padding-left: 34px;
+		&:before {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			top: 5px;
+			left: 0;
+			margin-right: 16px;
+			width: 24px;
+			height: 24px;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		&__img_phone {
+			margin-bottom: 0px;
+			&:before {
+		  background-image: url('../img/phone.svg');
+			}
+		}
+		&__img_email:before {
+			background-image: url('../img/mail.svg');
+		}
+
+	}
+}
+.adress {
+	&__text {
+		font-family: HelveticaNeueCyr;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 550;
+		line-height: 30px;
+	}
+}
+.form {
+	&__text {
+		margin-bottom: 34px;
+	}
+	&__field {
+		max-width: 420px;
+		display: flex;
+		gap: 20px;
+		margin: 0 auto;
+		margin-bottom: 35px;
+	}
+	&__label {
+		display: block;
+		text-align: left;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 117%;
+		color: #282626;
+	}
+	&__input {
+		width: 200px;
+		height: 40px;
+		border: none;
+		&_not-bottom {
+			margin-bottom: 20px;
+		}
+	}
+	&__wrap {
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__button {
+		display: block;
+		width: 80px;
+		height: 90px;
+		cursor: pointer;
+	}
+	&__paw-icon {
+		width: 73px;
+		height: 71px;
+	}
+	&__howto {
+		font-size: 12px;
+		line-height: 16px;
+		text-align: center;
+	}
+}
+
+
+
+
+
