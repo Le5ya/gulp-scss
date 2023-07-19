@@ -90,16 +90,13 @@
 	}
 	&__number-plate {
 		position: absolute;
-		top: 40px;
+		top: 30px;
 		left: 0;
 		width: 80px;
 		height: 80px;
 		border-radius: 50%;
 		background-color: $color-white;
 		padding: 15px 30px;
-		&_3 {
-			top: 50px;
-		}
 	}
 	&__number {
 		font-size: 50px;

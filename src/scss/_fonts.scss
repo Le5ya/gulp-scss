@@ -1,35 +1,35 @@
 // @import 'var';
 
-// @font-face {
-//   @include font('Comfortaa', 400)
-// }
-// @font-face {
-//   @include font('Helvetica Neue Cyr Light', 300)
-// }
-// @font-face {
-//   @include font('Helvetica Neue Cyr Heavy', 550)
-// }
-
-
 @font-face {
-  font-family: 'Comfortaa';
-  src: local('Comfortaa'), local('Comfortaa-Regular'),
-  url('../fonts/Comfortaa-Regular.woff2') format('woff2'), 
-     url('../fonts/Comfortaa-Regular.woff') format('woff');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Helvetica Neue Cyr Light';
-  src: local('Helvetica-Neue-Cyr'), local('Helvetica-Neue-Cyr-Light'),
-     url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
-     url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'); 
-  font-weight: 300;
+  @include font(Comfortaa, 400)
 }
 @font-face {
-  font-family: 'Helvetica Neue Cyr Heavy';
-  src: local('Helvetica-Neue-Cyr'), local('Helvetica-Neue-Cyr-Heavy'),
-     url('../fonts/HelveticaNeueCyr-Heavy.woff2') format('woff2'),
-     url('../fonts/HelveticaNeueCyr-Heavy.woff') format('woff'); 
-  font-weight: 550;
+  @include font(HelveticaNeueCyr, 300)
 }
+@font-face {
+  @include font(HelveticaNeueCyr, 550)
+}
+
+
+// @font-face {
+//   font-family: 'Comfortaa';
+//   src: local('Comfortaa'), local('Comfortaa-Regular'),
+//   url('../fonts/Comfortaa-Regular.woff2') format('woff2'), 
+//      url('../fonts/Comfortaa-Regular.woff') format('woff');
+//   font-weight: 400;
+// }
+
+// @font-face {
+//   font-family: 'Helvetica Neue Cyr Light';
+//   src: local('Helvetica-Neue-Cyr'), local('Helvetica-Neue-Cyr-Light'),
+//      url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+//      url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'); 
+//   font-weight: 300;
+// }
+// @font-face {
+//   font-family: 'Helvetica Neue Cyr Heavy';
+//   src: local('Helvetica-Neue-Cyr'), local('Helvetica-Neue-Cyr-Heavy'),
+//      url('../fonts/HelveticaNeueCyr-Heavy.woff2') format('woff2'),
+//      url('../fonts/HelveticaNeueCyr-Heavy.woff') format('woff'); 
+//   font-weight: 550;
+// }

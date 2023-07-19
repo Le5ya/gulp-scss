@@ -10,6 +10,6 @@ $color-orange: #ff8a00;
     weight: $weight;
     display: swap;
   }
-  src: url("../fonts/#{ $name }-{ $weight }mwoff2")  format("woff2"),
-    url("../fonts/#{ $name }-{ $weight }mwoff")  format("woff"),
+  src: url("../fonts/#{ $name }-#{ $weight }.woff2") format("woff2"),
+    url("../fonts/#{ $name }-#{ $weight }.woff") format("woff"),
 }
