@@ -13,3 +13,11 @@ $color-orange: #ff8a00;
   src: url("../fonts/#{ $name }-#{ $weight }.woff2") format("woff2"),
     url("../fonts/#{ $name }-#{ $weight }.woff") format("woff"),
 }
+@mixin bg-full ($url) {
+  background: {
+    image: url($url);
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  };
+}
