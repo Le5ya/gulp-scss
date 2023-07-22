@@ -11,10 +11,10 @@ headerMenu.addEventListener('click', () => headerBlank.classList
 .toggle('header__blank_vis'));
 
 
-for(btn of pawIcon) {
-  btn.addEventListener('click', () => modal.classList
+pawIcon.forEach((elem) =>  {
+  elem.addEventListener('click', () => modal.classList
 .add('modal_vis'));
-}
+})
 
 modalClose.addEventListener('click', () => modal.classList
 .remove('modal_vis'));
