@@ -1,11 +1,20 @@
 .header {
-	padding: 23px 0;
+	padding: 24px 0;
+	@media (max-width: 1040px) {
+		padding: 30px 0;
+	}
+	@media (max-width: 904px) {
+		padding: 33px 0;
+	}
+	@media (max-width: 450px) {
+		padding: 20px 0;
+		margin-bottom: 7px;
+	}
 	&__container {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0;
 	}
 	&__menu {
 		width: 40px;
@@ -17,38 +26,113 @@
 	&__blank {
 		display: none;
 		position: absolute;
-		left: 0;
-		top: 65px;
-		padding-bottom: 59px;
+		left: 24px;
+		top: 54px;
+		padding-bottom: 69px;
 		z-index: 20;
+		@media (max-width: 1040px) {
+			padding-bottom: 40px;
+			top: 41px;
+		}
 		&_vis {
 			display: block;
 		}
 	}
-	&__nav {
-		max-width: 394px;
-		height: auto;
-		padding: 59px 0;
-		margin-top: -10px;
-		background: $color-secondery;
-		border-bottom: 10px solid $color-main;
-	}
 	&__logo {
-		width: 355px;
-		height: 86px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 12px;
+		max-width: 355px;
+		max-height: 100%;
+		//display: flex;
+		//flex-direction: column;
+		//align-items: center;
+		//gap: 0;
+		@media (max-width: 1040px) {
+			max-width: 300px;
+			//max-height: 59px;
+		}
+		@media (max-width: 904px) {
+			width: 300px;
+			//height: 59px;
+		}
+		@media (max-width: 450px) {
+			width: 161px;
+			//height: 32px;
+		}
 	}
 	&__phone {
 		display: flex;
 		gap: 14px;
+		font-size: 20px;
+		line-height: 30;
+		font-weight: 550;
+		@media (max-width: 1040px)  {
+			gap: 10px;
+			font-size: 18px;
+			line-height: 24px;
+		}
+		@media (max-width: 904px) {
+			display: none;
+		}
 		&-icon {
 			width: 24px;
 			height: 24px;
 		}
 	}
+	&__nav {
+		position: relative;
+		max-width: 394px;
+		height: auto;
+		padding: 69px 0;
+		margin-top: -10px;
+		background: $color-secondery; 
+		border-bottom: 10px solid $color-main;
+		font-size: 20px;
+		line-height: 30px;
+		@media (max-width: 1040px) {
+			padding: 40px 0;
+			font-size: 18px;
+			line-height: 24px;
+		}
+		@media (max-width: 904px) {
+			position: relative;
+			padding: 84px 0;
+		}
+		@media (max-width: 450px) {
+			max-width: 270px;
+			height: 326px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}	
+}
+.nav {
+	&__phone {
+		display: none;
+		@media (max-width: 904px) {
+			display: block;
+			position: absolute;
+			top: 413px;
+			left: 34px;
+			
+		}
+	}
+}
+.phone {
+	&__text {
+			color: $color-primary;
+			font-family: HelveticaNeueCyr;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 550;
+			line-height: 30px;
+			@media(max-width: 1040px) {
+				font-size: 18px;
+				line-height: 24px;
+			}
+			@media (max-width: 450px) {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
 }
 .poly {
 	position: sticky;
@@ -70,26 +154,21 @@
 		font-style: normal;
 		font-weight: 550;
 		line-height: 30px;
+		@media (max-width: 1040px) {
+			font-size: 18px;
+			line-height: 24px;
+
+		} 
 	}
+	
 	&__underline {
 		width: 334px;
 		height: 1px;
 		background: $color-main;
+		@media (max-width: 1040px) {
+			width: 309px;
+		}
 	}
 }
-.logo {
-	&__span {
-		width: 225px;
-		height: 14px;
-	}
-}
-.phone {
-	&__text {
-		color: $color-primary;
-		font-family: HelveticaNeueCyr;
-		font-size: 20px;
-		font-style: normal;
-		font-weight: 550;
-		line-height: 30px;
-	}
-}
+
+

@@ -1,0 +1,249 @@
+.footer {
+	padding: 90px 0;
+	background-color: $color-primary;
+	@media (max-width: 1040) {
+		padding: 70px 0;
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		@media (max-width: 904px) {
+			flex-direction: column;
+		}
+	}
+	&__geo {
+		@media (max-width: 904px) {
+			width: 100%;
+			order: 1;
+		}
+	} 
+	&__map {
+		max-width: 680px;
+		height: 360px;
+		margin-bottom: 92px;
+		@media (max-width: 1040px) {
+			max-width: 480px;
+			height: 265px;
+			overflow: hidden;
+			margin-bottom: 57px;
+		}
+		@media (max-width: 904px) {
+			max-width: 700px;
+			height: 265px;
+			overflow: hidden;
+			margin-bottom: 57px;
+		}
+	}
+	&__logo {
+		display: flex;
+		justify-content: start;
+		margin-bottom: 8px;
+		cursor: pointer;
+		@media (max-width: 1040px) {
+			margin-bottom: 10px;
+		}
+		img {
+			max-width: 358px;
+			height: 43px;
+			@media (max-width: 1040px) {
+				max-width: 300px;
+				height: 37px;
+			}
+		}
+	}
+	&__copyright {
+		color: #FFF;
+		font-family: HelveticaNeueCyr;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 130%;
+		@media (max-width: 1040px)  {
+			font-size: 18px;
+			line-height: 133%; 
+		}
+	}
+	&__info {
+		padding-top: 64px;
+		@media (max-width: 1040px) {
+			padding-top: 33px;
+		}
+	}
+	&__contacts {
+		display: block;
+		margin-bottom: 159px;
+		@media (max-width: 1040px)  {
+			margin-bottom: 83px;
+		}
+		@media (max-width: 904px) {
+			padding-top: 40px;
+		}
+	}
+	&__adress {
+		font-family: HelveticaNeueCyr;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 128%;
+		color: $color-white;
+		margin-bottom: 30px;
+		@media (max-width: 1040px) {
+			margin-bottom: 33px;
+		}
+		@media (max-width: 904px) {
+			position: absolute;
+			left: 0;
+			top: 104px;
+		}
+	}
+	&__phone {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 20px;
+		@media (max-width: 1040px) {
+			margin-bottom: 12px;
+		}
+	}
+	&__phone-icon {
+		max-width: 24px;
+		height: 24px;
+	}
+	&__mail {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 10px;
+	}
+	&__mail-icon {
+		max-width: 20px;
+		height: 16px;
+		@media (max-width: 1040px) {
+			max-width: 24px;
+			height: 24px;
+		}
+	}
+	&__social {
+		margin-bottom: 18px;
+	}
+}
+.phone {
+	&__text {
+		&_white{
+			color: #fff;
+			font-size: 20px;
+			line-height: 30px;
+			@media (max-width: 1040px) {
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+	} 
+}
+.mail {
+	&__text {
+		&_white{
+			color: #fff;
+			font-family: HelveticaNeueCyr;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 550;
+			line-height: 150%;
+			@media (max-width: 1040px) {
+				max-width: 18px;
+				line-height: 133%;
+			}
+		}
+	}
+}
+.logo {
+	&__title {
+		color: #FFF;
+		font-family: Comfortaa;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 100%;
+		margin-bottom: 8px;
+		@media (max-width: 1040px) {
+			font-size: 34px;
+			margin-bottom: 10px;
+		}  
+	}
+	&__subtitle {
+		color: #FFF;
+		font-family: HelveticaNeueCyr;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 130%;
+		@media (max-width: 1040px) {
+			font-size: 18px;
+			line-height: 133%;
+		} 
+	}
+}
+.social {
+	&__item {
+		display: inline-block;
+		margin-right: 40px;
+		@media (max-width: 1040px) {
+			margin-right: 30px;
+		}
+	}
+	&__item {
+		&:last-child {
+  		margin-right: 0;
+	}
+	}
+	&__link {
+		display: block;
+		width: 40px;
+		height: 40px;
+		outline: 1px solid transparent;
+		color: $color-main;
+		cursor: pointer;
+	}
+}
+.info {
+	@media (max-width: 904px) {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	&__logo {
+		margin-bottom: 22px;
+		@media (max-width: 1040px) {
+			margin-bottom: 20px;
+		}
+	}
+	&__part {
+		&_top {
+			@media (max-width: 904px) {
+				display: flex;
+				justify-content: flex-start;
+				gap: 142px;
+			}
+		}
+		&_bottom {
+			@media (max-width: 904px) {
+				position: absolute;
+				top: 540px;
+				left: 450px;
+			}
+		}
+	}
+}
+.author {
+	&__info {
+		color: $color-white;
+		font-family: Arial;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 114%; 
+	}
+}

@@ -15,7 +15,7 @@ body {
 	background-color: $color-white;
 	color: $color-primary;
 }
-h1, h2, h3, p, figure {
+h1, h2, h3, p, img, figure {
 	margin: 0;
 	padding: 0;
 }
@@ -52,15 +52,58 @@ img {
 	max-width: 1220px;
 	padding: 0 20px;
 	margin: 0 auto;
+	@media (max-width: 1040px) {
+		max-width: 920px;
+	}
+	@media (max-width: 904px) {
+		max-width: 740px;
+	}
+	@media (max-width: 450px) {
+		max-width: 300px;
+		padding: 0 15px;
+	}
 }
 .title {
 	font-family: 'Comfortaa';
-	min-width: 380px;
+	min-width: 480px;
 	font-weight: 400;
 	font-size: 50px;
 	line-height: 60px;
-	color: $color-primary;
+	color: $color-main;
 	margin-bottom: 50px;
+	@media (max-width: 1040px) {
+		min-width: 380px;
+		font-size: 44px;
+		line-height: 54px;
+		margin-bottom: 43px;
+	}
+	@media (max-width: 904px) {
+		width: 100%;
+		font-size: 30px;
+		line-height: 34px;
+		margin-bottom: 30px;
+	}
+	@media (max-width: 450px) {
+		min-width: 380px;
+		font-size: 44px;
+		line-height: 54px;
+		margin-bottom: 43px;
+	}
+
+}
+.subtitle {
+	font-family: 'Helvetica Neue Cyr Roman', sans-serif;
+	font-weight: 550;
+	font-size: 30px;
+	line-height: 40px;
+	@media (max-width: 1040px) {
+		font-size: 24px;
+		line-height: 30px;	
+		}
+	@media (max-width: 904px) {
+		font-size: 18px;
+		line-height: 24px;	
+		}
 }
 .link {
 	position: relative;
@@ -78,5 +121,4 @@ img {
     left: calc(100% + 15px);
     background-image: url('../img/link-arrow.svg');
 	}
-
 }

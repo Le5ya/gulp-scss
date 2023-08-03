@@ -27,6 +27,8 @@ const sass = gulpSass(sassPkg);
 const allJS = [
     "src/libs/jquery-3.7.0.min.js ",
     "src/libs/inputmask.min.js",
+    "src/libs/cookie.min.js",
+    "src/libs/swiper-bundle.min.js",
     "src/libs/just-validate.production.min.js",
     
 ];
@@ -132,8 +134,11 @@ export const critCSS = () => gulp
       .pipe(gulp.dest('dist'))
 
 export const copy = () => gulp
-    .src(
-        'src/fonts/**/*', {
+    .src([
+        'src/fonts/**/*',
+        'src/img/**/*',
+        'src/libs/**/*'
+    ],{
         base: 'src'
     })
     .pipe(gulp.dest('dist'))
@@ -152,10 +157,14 @@ export const server = () => {
     })
     // "illegal operation on a directory watch"
     
-    // gulp.watch('src/**/*.html', html); 
+    // gulp.watch('./src/**/*.html', html); 
     // gulp.watch(prepros ? 'src/scss/**/*.scss' : 'src/css/**/*.css', style); 
+    // gulp.watch('./src/js/**/*.js', js);
+    //gulp.watch([
+    //    'src/img/**/*',
+    //    'src/fonts/**/*',
+    //], copy)
     // gulp.watch('src/img/**/*.{jpg,jpeg,png,svg}', img);
-    // gulp.watch('src/js/**/*.js', js);
     // gulp.watch('src/fonts/**/*', copy);
     // gulp.watch('src/img/**/*.{jpg,jpeg,png}', webp);  
     // gulp.watch('src/img/**/*.{jpg,jpeg,png}', avif);  

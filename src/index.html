@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=51fba76d-2e68-42b1-9f2e-02ab30290d27&lang=ru_RU"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const createLink = url => {
@@ -17,6 +18,7 @@
     })
   </script>
   <!-- <link rel="stylesheet" href="css/index.css"> -->
+  
   <script defer src="js/index.min.js"></script>
 
   <title>Document</title>
@@ -29,10 +31,7 @@
       </button>
       <div class="logo header__logo">
         <div class="logo__img">
-          <img  loading="lazy" src="img/logo.svg" alt="Логотип" width="355" height="45">
-        </div>
-        <div class="logo__span">
-          <img  loading="lazy" src="img/span.svg" alt="Название в логотипе" width="255" height="18">
+          <img loading="lazy" src="img/logo.svg" alt="Логотип" width="161" height="32">
         </div>
       </div>
       <div class="header__blank">
@@ -42,7 +41,7 @@
               </svg>
               
         </div>
-        <nav class="header__nav">
+        <nav class="nav header__nav">
           <ul class="menu drop-menu" role="menu">
             <li class="menu__item" role="menuitem"><a href="#about" tabindex="0">О приюте</a></li>
             <div class="menu__underline"></div>
@@ -53,11 +52,13 @@
             <li class="menu__item" role="menuitem"><a href="#pets" tabindex="0">Наши питомцы</a></li>
             <div class="menu__underline"></div>
             <li class="menu__item" role="menuitem"><a href="#contacts" tabindex="0">Контакты</a></li>
-            
           </ul>
         </nav>
+        <div class="phone nav__phone">
+          <img loading="lazy" src="img/call.svg" class="header__phone-icon" alt="phone" width="24" height="24">
+          <a href="tel:+79509302893" class="phone__text">8 (950) 930-28-93</a>
+        </div>
     </div>
-      
       <div class="phone header__phone">
         <img  loading="lazy" src="img/call.svg" class="header__phone-icon" alt="phone" width="24" height="24">
         <a href="tel:+79509302893" class="phone__text">8 (950) 930-28-93</a>
@@ -69,7 +70,7 @@
     <section class="section hero">
       <div class="container hero__container">
         <div class="hero__panel">
-          <div class="hero__anonce">
+          <div class="hero__advert">
             <h2 class="hero__title">
               <span class="hero__text hero__text_orange">
                 Сара ждёт,
@@ -81,13 +82,16 @@
             </h2>
           </div>
           <button class="paw-button" aria-label="Открыть модальное окно">
-              <img  loading="lazy" src="img/paw.svg" class="paw-icon" alt="Лапка" width="111" height="101"> 
-            <p class="howto">Жми на лапку, чтобы помочь!</p>
+              <img loading="lazy" src="img/paw.svg" class="paw-button__icon" alt="Лапка" width="111" height="101">
+              <p class="paw-button__howto">Жми на лапку, чтобы помочь!</p>
           </button>
           
         </div>
         <div class="hero__image">
         <img  loading="lazy" src="img/sarah.png" alt="Собака Сара" width="550" height="550">
+        </div>
+        <div class="hero__image hero__image_mob">
+          <img loading="lazy" src="img/sarah-1.png" alt="Собака Сара" width="270" height="266">
         </div>
         <div class="hero__thumbs">
           <figure class="thumb hero__thumb">
@@ -127,8 +131,8 @@
             <source srcset="img/home.webp" type="image/avif/webp"/>
             <img  loading="lazy" src="img/home.jpg" alt="home" width="580" height="330">
           </picture>
-          
         </div>
+        <a href="" class="link about__link">СМИ о нас</a>
       </div>
         
     </section>
@@ -139,14 +143,15 @@
           <div class="grid projects__grid">
         
                 <ul class="projects-list">
+
                   <li tabindex="0" class="project projects-list__project">
-                    <div class="img project__img">
-                      <picture>
+                    <!--<div>-->
+                    <!--<picture class="img project__img">
                         <img setsrc="img/image-1.avif" type="img/avif">
-                        <img setsrc="img/image-1.webp" type="img/webp">
-                      <img  loading="lazy" src="img/image-1.jpg" alt="Собака в домике" width="300" height="193">
-                      </picture>
-                    </div>
+                        <img setsrc="img/image-1.webp" type="img/webp">-->
+                        <img loading="lazy" class="img project__img" src="img/image-1.jpg" alt="Собака в домике" width="300" height="170">
+                        <!--</picture>-->
+                        <!--</div>-->
                     <div class="info project__info">
                       <h3 class="subtitle project__subtitle">Новый дом для животных</h3>
                       <p class="text info__text">
@@ -157,13 +162,12 @@
                     </div>
                   </li>
                   <li tabindex="0" class="project projects-list__project">
-                    <div class="img project__img">
-                      <picture>
+                      <!--<picture>
                         <img setsrc="img/image-2.avif" type="img/avif">
-                        <img setsrc="img/image-2.webp" type="img/webp">
-                      <img  loading="lazy" src="img/image-2.jpg" alt="Собака в желтой курточке" width="300" height="193">
-                      </picture>
-                    </div>
+                        <img setsrc="img/image-2.webp" type="img/webp">-->
+                        <img loading="lazy" class="img project__img" src="img/image-2.jpg" alt="Собака в желтой курточке" width="300"
+                          height="193">
+                        <!--</picture>-->
                     <div class="info project__info">
                       <h3 class="subtitle project__subtitle">Маленькие модники</h3>
                       <p class="text info__text">Наши котики и собачки тоже любят наряжаться, чтобы красиво 
@@ -174,13 +178,11 @@
                   
                   </li>
                   <li tabindex="0" class="project projects-list__project">
-                    <div class="img project__img">
-                      <picture>
+                  <!--<picture>
                         <img setsrc="img/image-3.avif" type="img/avif">
-                        <img setsrc="img/image-3.webp" type="img/webp">
-                      <img  loading="lazy" src="img/image-3.jpg" alt="Девушка с собакой" width="300" height="193">
-                      </picture>
-                    </div>
+                        <img setsrc="img/image-3.webp" type="img/webp">-->
+                        <img loading="lazy" class="img project__img" src="img/image-3.jpg" alt="Девушка с собакой" width="300" height="193">
+                        <!--</picture>-->
                     <div class="info project__info">
                       <h3 class="subtitle project__subtitle">Поиграй со мной!</h3>
                       <p class="text info__text">Новая программа нашего приюта “Поиграй со мной”. Приводите 
@@ -188,16 +190,13 @@
                       </p>
                       <a href="" class="link info__link">Подробнее</a>
                     </div>
-                    
                   </li>
                   <li tabindex="0" class="project projects-list__project">
-                    <div class="img project__img">
-                      <picture>
+                      <!--<picture>
                         <img setsrc="img/image-4.avif" type="img/avif">
-                        <img setsrc="img/image-4.webp" type="img/webp">
-                      <img  loading="lazy" src="img/image-4.jpg" alt="Собака позирует" width="300" height="193">
-                      </picture>
-                    </div>
+                        <img setsrc="img/image-4.webp" type="img/webp">-->
+                        <img loading="lazy" class="img project__img" src="img/image-4.jpg" alt="Собака позирует" width="300" height="193">
+                        <!--</picture>-->
                     <div class="info project__info">
                       <h3 class="subtitle project__subtitle">Конкурс “Лучшее фото”</h3>
                       <p class="text info__text">Приходи к нам в Friendly House и делай классные фотографии 
@@ -273,73 +272,125 @@
           <h2 class="title help__title">Как ты можешь нам помочь?</h2>
         <ul class="help__list">
           <li tabindex="0" class="help__item">
-            <div class="help__description">
-              <div class="help__number-plate">
-                <p class="help__number">1</p>
-              </div>
-              <h3 class="subtitle help__subtitle">
-                  Финансово
-              </h3>
-                  <p class="help__text help__text_width_less">Мы будем рады любым пожертвованиям. 
-                    Деньги пойдут на корм, лечение и уход, 
-                    а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
-            </div>
-              <figure class="help__images">
-                <img  loading="lazy" class="help__img" src="img/rabbit.jpg" alt="Кролик и морковка" width="180" height="139">
-                <img  loading="lazy" class="help__img" src="img/image-4-small.jpg" alt="Собака показывает язык" width="180" height="139">
-                <img  loading="lazy" class="help__img" src="img/dog-in-gips.jpg" alt="Собака в ветеринарном воротнике" width="380" height="298">
-            </figure>
-          </li>
-          <li tabindex="0" class="help__item">
-            <div class="help__left">
-              <div class="help__number-plate">
-                <p class="help__number">2</p>
-              </div>
-              <h3 class="subtitle help__subtitle help__subtitle_2">
-                Стать волонтером
-              </h3>
-              <picture>
-                <source srcset="img/girl-and-dog.avif" type="image/avif"/>
-                <source srcset="img/girl-and-dog.webp" type="image/avif/webp"/>
-                <img  loading="lazy" class="help__img" src="img/girl-and-dog.jpg" alt="Девочка и собака" width="580" height="349">
-              </picture>
-            </div>
-              <div class="help__texts">
-                <p class="help__text help__text_vol">
-                  Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и набирающего популярность интеллектуального волонтерства до помощи руками.  
-                </p>
-                <p class="help__text help__text_vol">
-                  Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с перевозкой животных в клиники, забрать и привезти вещи и много всего другого. Мы всегда рады любой помощи.
-                </p>
-              </div>
-          </li>
-          <li tabindex="0" class="help__item">
-            <div class="help__description">
-              <div class="help__number-plate help__number-plate_3">
-                <p class="help__number">3</p>
-              </div>
-              <h3 class="subtitle help__subtitle">
-                Стать опекуном
-              </h3>
-                <div class="help__texts">
-                  <p class="help__text help__text_width_less">
-                    Хотите друга, но не можете взять домой? Проект опеки - идеальное решение!
-                  </p>
-                <p class="help__text help__text_width_less">
-                  Bзять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не мог себе этого позволить по&nbsp;каким-либо причинам.</p>
+              <div class="help__subtitle">
+                <div class="help__number-plate">
+                  <p class="help__number">1</p>
                 </div>
-            </div>
-            <figure class="help__images help__images_com">
-              <img  loading="lazy" class="help__image" src="img/cat-meo.jpg" alt="Кошка мяукает" width="280" height="382">
-              <img  loading="lazy" class="help__image" src="img/cat&finger.jpg" alt="Кот ловит палец хозяйки" width="280" height="181">
-              <img  loading="lazy" class="help__image" src="img/frandsheep.jpg" alt="Человек с собакой" width="280" height="181">
-            </figure> 
+                <h3 class="subtitle">
+                  Финансово
+                </h3>
+              </div>
+              <div class="help__wrapper">
+                <p class="help__text help__text_less">Мы будем рады любым пожертвованиям.
+                  Деньги пойдут на корм, лечение и уход,
+                  а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
+              
+              <figure class="help__images">
+                <img loading="lazy" class="help__img" src="img/rabbit.jpg" alt="Кролик и морковка" width="180" height="139">
+                <img loading="lazy" class="help__img" src="img/image-4-small.jpg" alt="Собака показывает язык" width="180" height="139">
+                <img loading="lazy" class="help__img" src="img/dog-in-gips.jpg" alt="Собака в ветеринарном воротнике" width="380"
+                  height="298">
+                </figure>
+              <div class="swiper help__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/rabbit.jpg" alt="Кролик и морковка"
+                      width="180" height="139"></div>
+                  <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/image-4-small.jpg"
+                      alt="Собака показывает язык" width="180" height="139"></div>
+                  <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/dog-in-gips.jpg"
+                      alt="Собака в ветеринарном воротнике" width="380" height="298"></div>
+                  ...
+                </div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-button swiper-button-next"></div>
+              
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+              </div>
+          </li>
+          <li tabindex="0" class="help__item">
+              <div class="help__subtitle help__subtitle_2">
+                <div class="help__number-plate">
+                  <p class="help__number">2</p>
+                </div>
+                <h3 class="subtitle">
+                  Стать волонтером
+                </h3>
+              </div>
+              
+              <div class="help__wrapper">
+                <picture class="help__img">
+                  <source srcset="img/girl-and-dog.avif" type="image/avif" />
+                  <source srcset="img/girl-and-dog.webp" type="image/avif/webp" />
+                  <img loading="lazy" src="img/girl-and-dog.jpg" alt="Девочка и собака" width="580" height="349">
+                </picture>
+                  <div class="help__texts">
+                    <p class="help__text">
+                      Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и
+                      набирающего популярность интеллектуального волонтерства до помощи руками.
+                    </p>
+                    <p class="help__text">
+                      Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с
+                      перевозкой животных в клиники, забрать и привезти вещи и много всего другого. Мы всегда рады любой помощи.
+                    </p>
+                    </div>
+              </div>
+          </li>
+          <li tabindex="0" class="help__item">
+              <div class="help__subtitle">
+                <div class="help__number-plate help__number-plate_3">
+                  <p class="help__number">3</p>
+                </div>
+                <h3 class="subtitle help__subtitle">
+                  Стать опекуном
+                </h3>
+              </div>
+              <div class="help__wrapper">
+                  <div class="help__texts">
+                    <p class="help__text help__text_less">
+                      Хотите друга, но не можете взять домой? Проект опеки - идеальное решение!
+                    </p>
+                    <p class="help__text help__text_less">
+                      Bзять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не
+                      мог себе этого позволить по&nbsp;каким-либо причинам.</p>
+                    </div>
+                    <figure class="help__images help__images_com">
+                      <img loading="lazy" class="help__image" src="img/cat-meo.jpg" alt="Кошка мяукает" width="280" height="382">
+                      <img loading="lazy" class="help__image" src="img/cat-finger.jpg" alt="Кот ловит палец хозяйки" width="280" height="181">
+                      <img loading="lazy" class="help__image" src="img/frandsheep.jpg" alt="Человек с собакой" width="280" height="181">
+                      </figure>
+                    <div class="swiper help__swiper">
+                      <!-- Additional required wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/cat-meo.jpg" alt="Кошка мяукает"
+                            width="180" height="139"></div>
+                        <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/cat-finger.jpg"
+                            alt="Кот ловит палец хозяйки" width="180" height="139"></div>
+                        <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/frandsheep.jpg" alt="Человек с собакой" в
+                            ветеринарном воротник width="380" height="298"></div>
+                        ...
+                      </div>
+                    
+                      <!-- If we need navigation buttons -->
+                      <div class="swiper-button swiper-button-prev"></div>
+                      <div class="swiper-button swiper-button-next"></div>
+                    
+                      <!-- If we need scrollbar -->
+                      <div class="swiper-scrollbar"></div>
+                    </div>
+                    </div>
           </li>
         </ul>
         <div class="help__wrap">
           <button class="paw-button" aria-label="Открыть модальное окно">
             <a href="#modal">
-              <img  loading="lazy" src="img/paw.svg" class="paw-icon" alt="Лапка" width="111" height="101">
+              <img loading="lazy" src="img/paw.svg" class="paw-button__icon" alt="Лапка" width="111" height="101">
             </a>   
             <p class="howto">Жми на лапку, чтобы помочь!</p>
           </button>
@@ -353,18 +404,17 @@
         <div class="grid pet__grid">
           <figure class="photo pet__photo">
             <img  loading="lazy" src="img/image-01.jpg" alt="" width="457" height="263">
-            <figcaption class="presantation pet__presantation">Твинки и Пинки, 2 месяца</figcaption>
+          <figcaption class="presantation pet__presantation">Твинки и Пинки, 2 месяца</figcaption>
           </figure>
           <figure class="photo pet__photo">
             <img  loading="lazy" src="img/image-02.jpg" alt="" width="268" height="264">
-            <figcaption class="presantation pet__presantation">Мурзик, 6 месяцев</figcaption>
+          <figcaption class="presantation pet__presantation">Мурзик, 6 месяцев</figcaption>
           </figure>
           <figure class="photo pet__photo">
             <img  loading="lazy" src="img/image-03.jpg" alt="" width="389" height="589">
-            <figcaption class="presantation  pet__presantation ">Миша (кот) и Ричард (пёс), 
+          <figcaption class="presantation  pet__presantation ">Миша (кот) и Ричард (пёс),
               3 года и 5 лет</figcaption>
           </figure>
-          <!-- <div class="enclosure  pet__enclosure"> -->
           <figure class="photo pet__photo">
             <img  loading="lazy" src="img/image-04.jpg" alt="" width="271" height="271">
             <figcaption class="presantation  pet__presantation ">Джек, 1 год</figcaption>
@@ -373,23 +423,74 @@
             <img  loading="lazy" src="img/image-05.jpg" alt="" width="268" height="268">
             <figcaption class="presantation  pet__presantation ">Джерри, 3 недели</figcaption>
           </figure>
-          <figure class="photo pet__photo pet__photo">
+          <figure class="photo pet__photo">
             <img  loading="lazy" src="img/image-06.jpg" alt="" width="153" height="130">
             <img  loading="lazy" src="img/image-07.jpg" alt="" width="153" height="130">
             <figcaption class="presantation  pet__presantation ">Рокки и Сеня, 2 и 3 года</figcaption>
           </figure>
-          <!-- </div> -->
+          </div>
+          <div class="swiper pet__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper__wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <figure class="photo swiper__photo">
+                  <img loading="lazy" src="img/image-01.jpg" alt="" width="540" height="368">
+                  <figcaption class="presantation pet__presantation">Твинки и Пинки, 2 месяца</figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="photo swiper__photo">
+                  <img loading="lazy" src="img/image-02.jpg" alt="" width="459" height="368">
+                  <figcaption class="presantation pet__presantation">Мурзик, 6 месяцев</figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="photo swiper__photo">
+                  <img loading="lazy" src="img/image-03.jpg" alt="" width="280" height="368">
+                  <figcaption class="presantation  pet__presantation ">Миша (кот) и Ричард (пёс),
+                    3 года и 5 лет</figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="photo swiper__photo">
+                  <img loading="lazy" src="img/image-04.jpg" alt="" width="394" height="368">
+                  <figcaption class="presantation  pet__presantation ">Джек, 1 год</figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="photo swiper__photo">
+                  <img loading="lazy" src="img/image-05.jpg" alt="" width="295" height="368">
+                  <figcaption class="presantation  pet__presantation ">Джерри, 3 недели</figcaption>
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure class="photo swiper__photo swiper__photo_duble">
+                  <img loading="lazy" src="img/image-06.jpg" alt="" width="237" height="184">
+                  <img loading="lazy" src="img/image-07.jpg" alt="" width="237" height="184">
+                  <figcaption class="presantation  pet__presantation ">Рокки и Сеня, 2 и 3 года</figcaption>
+                </figure>
+              </div>
+              ...
+            </div>
+          
+            <div class="swiper__button swiper__button_prev swiper-button-prev">
+              <img src="img/left.svg" class="button__img" alt="">
+            </div>
+            <div class="swiper__button swiper__button_next swiper-button-next">
+              <img src="img/right.svg" class="button__img" alt="">
+            </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="contacts" id="contacts">
+  <div class="contacts" id="contacts">
       <div class="contacts__plate">
         <div class="contacts__container">
           <h2 class="contacts__title">Ты можешь помочь нам!</h2>
           <p class="text contacts__text">Хочешь забрать питомца, стать волонтером, или опекуном? 
             <span class="span text__span">Свяжись с нами!</span></p>
-          <adress class="adress contacts__adress">
+          <div class="adress contacts__adress">
             <ul class="adress__list">
               <li tabindex="0" class="adress__item adress__item_img_phone">
                 <a href="tel:+78493003957" class="adress__text">8 (849) 300 - 39 -57</a>
@@ -398,7 +499,7 @@
                 <a href="mailto:FriendlyHouse@gmail.com" class="adress__text">FriendlyHouse@gmail.com</a>
               </li>
             </ul>
-          </adress>
+          </div>
           <form action="https://jsonplaceholder.typicode.com/posts" class="form contacts__form" 
           method="POST">
           <p class="text contacts__text form__text">Или оставь свои контакты и мы сами свяжемся с тобой!</p>
@@ -415,15 +516,104 @@
                 <div class="form__wrap">
                   <button class="paw-button form__button" type="submit">
                 
-                    <img  loading="lazy" src="img/paw-1.svg" class="paw-icon form__paw-icon" alt="Лапка" width="111" height="71"> 
+                    <img loading="lazy" src="img/paw-1.svg" class="paw-icon paw-button__icon form__paw-icon" alt="Лапка" width="111"
+                      height="71">
               
                   <p class="howto form__howto">Отправить</p>
                 </button>
                 </div>
-                
           </form>
-        </div>
+          </div>
+          </div>
+          </div>
+          <footer class="footer">
+            <div class="container footer__container">
+              <div class="footer__geo">
+                <div class="map footer__map" id="map" width="680" height="360"></div>
+                <div class="logo footer__logo">
+                  <img loading="lazy" class="img logo__img" src="img/logo-footer.svg" alt="Логотип" width="161" height="32">
+                </div>
+                <div class="footer__copyright">
+                  приют для животных Friendly House® 2011-2021
+                </div>
+              </div>
+              <div class="info footer__info">
+                <div class="info__part info__part_top">
+                  <div class="logo info__logo">
+                    <div class="logo__title">Friendly House</div>
+                    <div class="logo__subtitle">приют для животных</div>
+                  </div>
+                  <adress class="footer__contacts">
+                    <div class="adress footer__adress">
+                      103929, Москва, Пятницкое шоссе, дом 28
+                    </div>
+                    <div class="phone footer__phone">
+                      <img loading="lazy" src="img/call.svg" class="footer__phone-icon" alt="phone" width="24" height="24">
+                      <a href="tel:+79509302893" class="phone__text phone__text_white">8 (950) 930-28-93</a>
+                    </div>
+                    <div class="mail footer__mail">
+                      <img loading="lazy" src="img/mail.svg" class="footer__mail-icon" alt="mail" width="20" height="16">
+                      <a href="mailto:FriendlyHouse@gmail.com" class="mail__text mail__text_white">
+                        FriendlyHouse@gmail.com</a>
+                    </div>
+                  </adress>
+                </div>
+                <div class="info__part info__part_bottom">
+                  <ul class="social footer__social">
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__img" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                          fill="none">
+                          <path
+                            d="M19.9999 0.799805C9.39588 0.799805 0.799881 9.39581 0.799881 19.9998C0.799881 30.6038 9.39588 39.1998 19.9999 39.1998C30.6039 39.1998 39.1999 30.6038 39.1999 19.9998C39.1999 9.39581 30.6039 0.799805 19.9999 0.799805ZM27.3839 22.4618C27.3839 22.4618 29.0819 24.1378 29.4999 24.9158C29.5119 24.9318 29.5179 24.9478 29.5219 24.9558C29.6919 25.2418 29.7319 25.4638 29.6479 25.6298C29.5079 25.9058 29.0279 26.0418 28.8639 26.0538H25.8639C25.6559 26.0538 25.2199 25.9998 24.6919 25.6358C24.2859 25.3518 23.8859 24.8858 23.4959 24.4318C22.9139 23.7558 22.4099 23.1718 21.9019 23.1718C21.8374 23.1717 21.7732 23.1818 21.7119 23.2018C21.3279 23.3258 20.8359 23.8738 20.8359 25.3338C20.8359 25.7898 20.4759 26.0518 20.2219 26.0518H18.8479C18.3799 26.0518 15.9419 25.8878 13.7819 23.6098C11.1379 20.8198 8.75788 15.2238 8.73788 15.1718C8.58788 14.8098 8.89788 14.6158 9.23588 14.6158H12.2659C12.6699 14.6158 12.8019 14.8618 12.8939 15.0798C13.0019 15.3338 13.3979 16.3438 14.0479 17.4798C15.1019 19.3318 15.7479 20.0838 16.2659 20.0838C16.363 20.0827 16.4584 20.058 16.5439 20.0118C17.2199 19.6358 17.0939 17.2258 17.0639 16.7258C17.0639 16.6318 17.0619 15.6478 16.7159 15.1758C16.4679 14.8338 16.0459 14.7038 15.7899 14.6558C15.8935 14.5128 16.03 14.3969 16.1879 14.3178C16.6519 14.0858 17.4879 14.0518 18.3179 14.0518H18.7799C19.6799 14.0638 19.9119 14.1218 20.2379 14.2038C20.8979 14.3618 20.9119 14.7878 20.8539 16.2458C20.8359 16.6598 20.8179 17.1278 20.8179 17.6798C20.8179 17.7998 20.8119 17.9278 20.8119 18.0638C20.7919 18.8058 20.7679 19.6478 21.2919 19.9938C21.3602 20.0367 21.4392 20.0595 21.5199 20.0598C21.7019 20.0598 22.2499 20.0598 23.7339 17.5138C24.1916 16.6943 24.5893 15.8428 24.9239 14.9658C24.9539 14.9138 25.0419 14.7538 25.1459 14.6918C25.2226 14.6527 25.3077 14.6328 25.3939 14.6338H28.9559C29.3439 14.6338 29.6099 14.6918 29.6599 14.8418C29.7479 15.0798 29.6439 15.8058 28.0179 18.0078L27.2919 18.9658C25.8179 20.8978 25.8179 20.9958 27.3839 22.4618Z"
+                            fill="#FF8A00" />
+                        </svg>
+          
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__img" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                          fill="none">
+                          <path
+                            d="M38.3998 19.2C38.3998 24.2922 36.377 29.1758 32.7763 32.7765C29.1756 36.3772 24.292 38.4 19.1998 38.4C14.1077 38.4 9.2241 36.3772 5.6234 32.7765C2.0227 29.1758 -0.000152588 24.2922 -0.000152588 19.2C-0.000152588 14.1078 2.0227 9.22425 5.6234 5.62355C9.2241 2.02285 14.1077 0 19.1998 0C24.292 0 29.1756 2.02285 32.7763 5.62355C36.377 9.22425 38.3998 14.1078 38.3998 19.2ZM19.8886 14.1744C18.0214 14.952 14.287 16.56 8.69025 18.9984C7.78305 19.3584 7.30545 19.7136 7.26225 20.0592C7.19025 20.6424 7.92225 20.8728 8.91825 21.1872L9.33825 21.3192C10.3174 21.6384 11.6374 22.0104 12.3214 22.0248C12.9454 22.0392 13.639 21.7848 14.4046 21.2568C19.6342 17.7264 22.3342 15.9432 22.5022 15.9048C22.6222 15.876 22.7902 15.8424 22.9006 15.9432C23.0134 16.0416 23.0014 16.2312 22.9894 16.2816C22.9174 16.5912 20.0446 19.26 18.559 20.6424C18.0958 21.0744 17.767 21.3792 17.6998 21.4488C17.5519 21.6 17.4015 21.7488 17.2486 21.8952C16.3366 22.7736 15.655 23.4312 17.2846 24.5064C18.0694 25.0248 18.6982 25.4496 19.3246 25.8768C20.0062 26.3424 20.6878 26.8056 21.571 27.3864C21.7942 27.5304 22.0103 27.6864 22.219 27.8352C23.0134 28.4016 23.731 28.9104 24.6118 28.8288C25.1254 28.7808 25.6558 28.3008 25.9246 26.8608C26.5606 23.46 27.811 16.0944 28.099 13.0584C28.1166 12.806 28.1062 12.5525 28.0678 12.3024C28.0453 12.1006 27.9476 11.9147 27.7942 11.7816C27.5759 11.6309 27.3155 11.5528 27.0502 11.5584C26.3302 11.5704 25.219 11.9568 19.8886 14.1744Z"
+                            fill="#FF8A00" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__img" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                          fill="none">
+                          <path
+                            d="M20.0004 0C8.95574 0 -0.000152588 8.95487 -0.000152588 20.0005C-0.000152588 28.1903 4.92446 35.2251 11.9716 38.3185C11.9152 36.9221 11.9609 35.2446 12.3198 33.7272C12.7045 32.1026 14.8932 22.8287 14.8932 22.8287C14.8932 22.8287 14.2542 21.5518 14.2542 19.6646C14.2542 16.701 15.9722 14.4862 18.1106 14.4862C19.9296 14.4862 20.8086 15.8523 20.8086 17.4887C20.8086 19.3174 19.6429 22.0508 19.0429 24.5862C18.5414 26.7087 20.107 28.4385 22.1999 28.4385C25.9891 28.4385 28.5409 23.5718 28.5409 17.8046C28.5409 13.4226 25.5891 10.1415 20.2193 10.1415C14.1522 10.1415 10.3727 14.6656 10.3727 19.719C10.3727 21.4626 10.8865 22.6908 11.6916 23.641C12.0614 24.0785 12.1127 24.2544 11.9788 24.7569C11.8829 25.1246 11.6624 26.0103 11.5716 26.3615C11.4388 26.8682 11.0286 27.0487 10.5701 26.8621C7.77574 25.721 6.47421 22.661 6.47421 19.221C6.47421 13.539 11.2655 6.72718 20.7681 6.72718C28.4045 6.72718 33.4301 12.2528 33.4301 18.1856C33.4301 26.0303 29.0681 31.8918 22.6383 31.8918C20.4798 31.8918 18.4486 30.7241 17.7527 29.399C17.7527 29.399 16.5916 34.0062 16.346 34.8974C15.9219 36.4395 15.0916 37.981 14.3327 39.1815C16.1729 39.7257 18.0819 40.002 20.0009 40.0021C31.045 40.001 39.9999 31.0456 39.9999 20.0005C39.9999 8.95487 31.045 0 20.0004 0Z"
+                            fill="#FF8A00" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__img" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                          fill="none">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M35.7953 7.73535C38.5267 11.2396 40.0068 15.557 39.9999 20C39.9999 31.0441 31.044 39.9999 20.0005 39.9999C12.2297 39.9999 5.49277 35.5661 2.18201 29.0917H10.8989C15.0528 29.0917 17.9543 26.8528 17.9543 23.2738C17.9543 15.6887 9.20405 18.7789 9.20405 16.0871C9.20405 14.7902 10.2446 14.3184 12.1487 14.3184H18.2153C19.8969 14.3184 21.8748 14.62 21.8748 16.4548V22.4994C21.8748 26.8764 25.2928 29.0912 28.8353 29.0912C32.4384 29.0912 35.7948 26.8764 35.7948 22.4994V7.73535H35.7953Z"
+                            fill="#FF8A00" />
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.0004 1.94593e-05C24.0138 -0.00559095 27.9352 1.20209 31.2501 3.46463V22.641C31.2501 23.9703 30.1629 25.0579 28.8357 25.0579C27.507 25.0579 26.4209 23.9703 26.4209 22.641V16.8949C26.4209 12.3077 24.0993 10.3995 21.0757 10.3995H11.2352C7.67267 10.3995 4.71729 12.6672 4.71729 16.2631C4.71729 18.1031 5.50549 20.7995 9.23318 21.4682C12.2696 22.0149 13.468 21.8559 13.468 23.4805C13.468 25.0579 11.7009 25.0579 9.36805 25.0579H0.646521C0.21571 23.4065 -0.00161659 21.7067 -0.000145166 20C-0.000145166 8.95847 8.95677 1.94593e-05 20.0004 1.94593e-05Z"
+                            fill="#FF8A00" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="author author__info">
+                    <div class="author__name">Design by Anastasia Ilina</div>
+                    <div class="author__mail">ilina9825@gmail.com</div>
+                  </div>
+                </div>
+
       </div>
+      </div>
+    
   </footer>
   <div class="modal contacts">
     <div id="modal" class="contacts__plate modal__plate">
@@ -433,7 +623,7 @@
         <h2 class="contacts__title">Ты можешь помочь нам!</h2>
         <p class="text contacts__text">Хочешь забрать питомца, стать волонтером, или опекуном? 
           <span class="span text__span">Свяжись с нами!</span></p>
-        <adress class="adress contacts__adress">
+        <div class="adress contacts__adress">
           <ul class="adress__list">
             <li tabindex="0" class="adress__item adress__item_img_phone">
               <a href="tel:+78493003957" class="adress__text">8 (849) 300 - 39 -57</a>
@@ -442,7 +632,7 @@
               <a href="mailto:FriendlyHouse@gmail.com" class="adress__text">FriendlyHouse@gmail.com</a>
             </li>
           </ul>
-        </adress>
+        </div>
         <form 
         action="https://jsonplaceholder.typicode.com/posts" 
         class="form contacts__form" 
@@ -464,7 +654,7 @@
               <div class="form__wrap">
                 <button class="paw-button form__button" type="submit">
               
-                  <img  loading="lazy" src="img/paw-1.svg" class="paw-icon form__paw-icon" alt="Лапка"> 
+                  <img loading="lazy" src="img/paw-1.svg" class="paw-icon paw-button__icon form__paw-icon" alt="Лапка">
             
                 <p class="howto form__howto">Отправить</p>
               </button>

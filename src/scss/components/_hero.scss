@@ -1,37 +1,131 @@
 .hero {
 	padding-top: 0;
 	padding-bottom: 90px;
+	@media (max-width: 1024px) {
+		padding: 45px 0;
+	}
+	@media (max-width: 904px) {
+		position: relative;
+		padding-top: 30px;
+		padding-bottom: 67px;
+	}
+	@media (max-width: 450px) {
+		padding-top: 82px;
+		padding-bottom: 40px;
+	}
 	&__container {
 		display: flex;
 		justify-content: space-between;
+		@media (max-width: 904px) {
+			gap: 0;
+		}
+		@media (max-width: 450px) {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+		}
 	}
 	&__panel {
 		max-width: 480px;
-		padding: 137px 0 25px 50px;
+		padding-top: 137px;
+		padding-bottom: 25px;
 		display: flex;
 		flex-direction: column;
 		gap: 81px;
+		@media (max-width: 1024px)  {
+			max-width: 300px;
+			padding-top: 69px;
+			padding-bottom: 60px;
+			gap: 13px;
+		}
+		@media (max-width: 904px)  {
+			max-width: 148px;
+			padding-top: 160px;
+			padding-bottom: 231px;
+			gap: 10px;
+		}
+		@media (max-width: 450px)  {
+			max-width: 300px;
+			padding: 0 13px;
+			gap: 13px;
+			order: 1;
+		}
 	}
-	&__anonce {
+	&__advert {
 		font-family: Comfortaa;
 		font-style: normal;
 		line-height: 60px;
 		font-weight: 400;
 		padding: 0;
-	}
-	&__text {
-		&_orange {
-			font-size: 60px;
-			margin-bottom: 14px;
-			color: $color-main;
+		@media (max-width: 1024px) {
+			line-height: 54px;
+		}
+		@media (max-width: 904px) {
+			position: absolute;
+			top: 0;
+			left: 80px;
+			line-height: 54px;
+		}
+		@media (max-width:450px) {
+			top: 0;
+			left: 20px;
+			max-width: 270px;
+			line-height: 26px;
 		}
 	}
 	&__text {
 		font-size: 48px;
+		@media (max-width: 1024px) {
+			font-size: 30px;
+			line-height: 34px;
+		}
+		@media (max-width: 904px) {
+			font-size: 24px;
+			line-height: 30px;
+		}
+		@media (max-width: 450px) {
+			font-size: 18px;
+			line-height: 26px;
+		}
+		&_orange {
+			font-size: 60px;
+			margin-bottom: 14px;
+			color: $color-main;
+			@media (max-width: 1024px) {
+				font-size: 44px;
+				line-height: 54px;
+			}
+			@media (max-width: 904px) {
+				font-size: 40px;
+				line-height: 44px;
+			}
+			@media (max-width: 450px) {
+				font-size: 26px;
+			}
+		}
 	}
 	&__image {
 		max-width: 580px;
 		height: 580px;
+		@media (max-width: 1024px) {
+			max-width: 416px;
+			height: 416px;
+		}
+		@media (max-width: 904px) {
+			max-width: 420px;
+			height: 400px;	
+		}
+		@media (max-width: 450px) {
+			display: none;
+		}
+		&_mob {
+			display: none;
+			@media (max-width: 450px) {
+			display: block;
+			max-width: 270px;
+			height: 266px;
+		}
+		}
 	}
 	&__thumbs {
 		display: flex;
@@ -39,11 +133,25 @@
 		gap: 20px;
 		padding-top: 100px;
 		padding-bottom: 70px;
+		@media (max-width: 1024px) {
+			padding-top: 32px;
+			padding-top: 38px;
+		}
+		@media (max-width: 904px) {
+			max-width: 140px;
+			padding-top: 56px;
+			padding-top: 41px;
+			gap: 15px;
+			
+		}
+		@media (max-width: 450px) {
+			flex-direction: row;
+			gap: 10px;
+			padding: 0 13px;
+		}	
 	}
 	&__thumb {
-		display: flex;
-		align-items: center;
-		gap: 19px;
+		text-align: center;
 	}
 }
 .paw-button {
@@ -53,21 +161,42 @@
 	padding: 0;
 	background: transparent;
 	cursor: pointer;
-}
-.paw-icon {
-	width: 111px;
-	margin: 0 auto;
-}
-.howto {
-	width: 100%;
-	color: $color-main;
-	text-align: center;
-	font-family: HelveticaNeueCyr;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 550;
-	line-height: 22px;
-	text-transform: uppercase;
+	@media (max-width: 1024px)  {
+		max-width: 148px;
+		height: 126px;
+	}
+	@media (max-width: 450px)  {
+		max-width: 84px;
+		height: 78px;
+	}
+	&__howto {
+		width: 100%;
+		color: $color-main;
+		text-align: center;
+		font-family: HelveticaNeueCyr;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 550;
+		line-height: 22px;
+		text-transform: uppercase;
+		@media (max-width: 450px) {
+			font-size: 8px;
+			line-height: 12px;
+		}
+	}
+	&__icon {
+		width: 111px;
+		height: 101px;
+		margin: 0 auto;
+		@media (max-width: 1024px) {
+			width: 83px;
+			height: 80px;
+		}
+		@media (max-width: 450px) {
+			width: 51px;
+			height: 50px;
+		}
+	}
 }
 .thumb {
 	&__img {
@@ -81,6 +210,11 @@
 		font-style: normal;
 		font-weight: 300;
 		line-height: 24px;
+		@media (max-width: 904px)  {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		
 	}
 }
 
