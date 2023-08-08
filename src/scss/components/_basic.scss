@@ -65,31 +65,28 @@ img {
 }
 .title {
 	font-family: 'Comfortaa';
-	min-width: 480px;
+	//min-width: 480px;
 	font-weight: 400;
 	font-size: 50px;
 	line-height: 60px;
 	color: $color-main;
 	margin-bottom: 50px;
 	@media (max-width: 1040px) {
-		min-width: 380px;
+		//min-width: 380px;
 		font-size: 44px;
 		line-height: 54px;
 		margin-bottom: 43px;
 	}
 	@media (max-width: 904px) {
-		width: 100%;
+		max-width: 100%;
 		font-size: 30px;
 		line-height: 34px;
 		margin-bottom: 30px;
 	}
 	@media (max-width: 450px) {
-		min-width: 380px;
-		font-size: 44px;
-		line-height: 54px;
-		margin-bottom: 43px;
+		font-size: 20px;
+		line-height: 120%;
 	}
-
 }
 .subtitle {
 	font-family: 'Helvetica Neue Cyr Roman', sans-serif;
@@ -117,8 +114,8 @@ img {
 		content: '';
 		width: 27px;
 		height: 17px;
-		top: 5px;
-    left: calc(100% + 15px);
+		top: 2px;
+    left: calc(100% - 15px);
     background-image: url('../img/link-arrow.svg');
 	}
 }

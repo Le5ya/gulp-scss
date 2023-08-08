@@ -6,6 +6,13 @@
 		padding-top: 70px;
 		padding-bottom: 120px;
 	}
+	@media (max-width: 904px) {
+		padding: 100px 0;
+	}
+	@media (max-width: 450px) {
+		padding-top: 40px;
+		padding-bottom: 70px;
+	}
 	&__plate {
 		max-width: 780px;
 		min-height: 592px;
@@ -18,6 +25,17 @@
 			min-height: 486px;
 			padding: 50px 100px;
 		}
+		@media (max-width: 904px) {
+			max-width: 540px;
+			min-height: 440px;
+			padding: 40px 68px;
+		}
+		@media (max-width: 450px) {
+			max-width: 270px;
+			min-height: 513px;
+			padding: 30px 29px;
+
+		}
 	}
 	&__container {
 		max-width: 580px;
@@ -27,6 +45,18 @@
 		text-align: center;
 		@media (max-width: 1040px) {
 			max-width: 480px;
+		}
+		@media (max-width: 1040px) {
+			max-width: 480px;
+		}
+		@media (max-width: 904px) {
+			max-width: 420px;
+		}
+		@media (max-width: 904px) {
+			max-width: 420px;
+		}
+		@media (max-width: 450px) {
+			max-width: 206px;
 		}
 	}
 	&__title {
@@ -42,6 +72,14 @@
 			line-height: 125%;
 			margin-bottom: 20px;
 		}
+		@media (max-width: 904px) {
+			font-size: 18px;
+			line-height: 133%;
+		}
+		@media (max-width: 450px) {
+			font-size: 16px;
+			line-height: 137%;
+		}
 	}
 	&__text {
 		text-align: center;
@@ -55,6 +93,15 @@
 			font-size: 18px;
 			line-height: 133%;
 			padding: 0 46px;
+		}
+		@media (max-width: 904px) {
+			font-size: 14px;
+			line-height: 143%;
+			padding: 0 42px;
+		}
+		@media (max-width: 450px) {
+			padding: 0;
+			text-align: center;
 		}
 	}
 	&__adress {
@@ -71,10 +118,7 @@
 		font-weight: 700;
 	}
 }
-.adress__list {
-	display: flex;
-	justify-content: space-between;
-}
+
 .adress {
 	&__item {
 		position: relative;
@@ -90,20 +134,35 @@
 			height: 24px;
 			background-size: contain;
 			background-repeat: no-repeat;
-		}
-		&__img_phone {
-			margin-bottom: 0px;
-			&:before {
-		  background-image: url('../img/phone.svg');
+			@media (max-width: 450px) {
+				margin-right: 16px;
 			}
 		}
-		&__img_email:before {
-			background-image: url('../img/mail.svg');
+		&_img {
+			&_phone {
+				&:before {
+		  		background-image: url('../../img/phone.svg');
+					@media (max-width: 506px) {
+						left: 28%;
+					}
+					@media (max-width: 450px) {
+						left: 12%;
+					}
+				}
+			}
+			&_email {
+				&:before {
+					background-image: url('../../img/mail.svg');
+					@media (max-width: 506px) {
+						left: 17%;
+					}
+					@media (max-width: 450px) {
+						left: 2%;
+					}
+				}
+			}
 		}
-
 	}
-}
-.adress {
 	&__text {
 		font-family: HelveticaNeueCyr;
 		font-size: 20px;
@@ -114,11 +173,29 @@
 			font-size: 18px;
 			line-height: 133%;
 		}
+		@media (max-width: 904px) {
+			font-size: 14px;
+			line-height: 143%;
+		}
+		@media (max-width: 450px) {
+			font-size: 14px;
+			line-height: 128%;
+		}
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 509px) {
+			display: block;
+		}
 	}
 }
 .form {
 	&__text {
 		margin-bottom: 34px;
+		@media (max-width: 450px) {
+			margin-bottom: 28px;
+		}
 	}
 	&__field {
 		max-width: 420px;
@@ -126,6 +203,12 @@
 		gap: 20px;
 		margin: 0 auto;
 		margin-bottom: 35px;
+		@media (max-width: 506px) {
+			max-width: 200px;
+			flex-direction: column;
+			gap: 28px;
+			margin-bottom: 20px;
+		}
 	}
 	&__label {
 		display: block;
@@ -149,16 +232,27 @@
 	&__wrap {
 		display: flex;
 		justify-content: flex-end;
+		@media( max-width:450px) {
+			justify-content: center;
+		}
 	}
 	&__button {
 		display: block;
 		width: 80px;
 		height: 90px;
 		cursor: pointer;
+		@media (max-width: 450px) {
+			width: 61px;
+			height: 73px;
+		}
 	}
 	&__paw-icon {
 		width: 73px;
 		height: 71px;
+		@media (max-width: 450px) {
+			width: 61px;
+			height: 59px;
+		}
 	}
 	&__howto {
 		font-size: 12px;

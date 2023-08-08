@@ -116,25 +116,29 @@
     </section>
     <section class="section about" id="about">
       <div class="container about__container">
-        <div class="about__info">
-          <h2 class="title about__title">О приюте</h2>
-          <p class="about__text">
-            Приют "Friendly House" - это целый комплекс для&nbsp;бездомных и   брошенных животных.
-          </p> 
-          <p class="about__text"> 
-            В приюте работает сплочённая команда, которая занимается помощью бездомным животным в течении многих лет. Мы заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход
-          </p> 
+        <div class="about__wrapper">
+          <div class="about__info">
+            <h2 class="title about__title">О приюте</h2>
+            <p class="about__text">
+                Приют "Friendly House" - это целый комплекс для&nbsp;бездомных и брошенных животных.
+                </p>
+                <p class="about__text">
+                В приюте работает сплочённая команда, которая занимается помощью бездомным животным в течении многих лет. Мы
+                заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход
+                </p>
+                </div>
+                <div class="about__img">
+                  <picture>
+              <source srcset="img/home.avif" type="image/avif" />
+              <source srcset="img/home.webp" type="image/avif/webp" />
+              <img loading="lazy" src="img/home.jpg" alt="home" width="580" height="330">
+              </picture>
+              </div>
         </div>
-        <div class="about__img">
-          <picture>
-            <source srcset="img/home.avif" type="image/avif"/>
-            <source srcset="img/home.webp" type="image/avif/webp"/>
-            <img  loading="lazy" src="img/home.jpg" alt="home" width="580" height="330">
-          </picture>
+        <div class="about__wrap">
+          <a href="#" class="link about__link">СМИ о нас</a>
         </div>
-        <a href="" class="link about__link">СМИ о нас</a>
-      </div>
-        
+        </div>
     </section>
     
     <section class="section projects" id="projects">
@@ -268,29 +272,30 @@
     </section>
     
     <section class="help" id="help">
-        <div class="container">
-          <h2 class="title help__title">Как ты можешь нам помочь?</h2>
+      <div class="container help__container">
+        <h2 class="title help__title">Как ты можешь нам помочь?</h2>
         <ul class="help__list">
           <li tabindex="0" class="help__item">
-              <div class="help__subtitle">
-                <div class="help__number-plate">
-                  <p class="help__number">1</p>
+            <div class="help__wrapper">
+              <div class="help__info">
+                <div class="help__subtitle">
+                  <div class="help__number-plate">
+                    <p class="help__number">1</p>
+                  </div>
+                  <h3 class="subtitle">
+                    Финансово
+                  </h3>
                 </div>
-                <h3 class="subtitle">
-                  Финансово
-                </h3>
-              </div>
-              <div class="help__wrapper">
                 <p class="help__text help__text_less">Мы будем рады любым пожертвованиям.
                   Деньги пойдут на корм, лечение и уход,
                   а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
-              
+              </div>
               <figure class="help__images">
                 <img loading="lazy" class="help__img" src="img/rabbit.jpg" alt="Кролик и морковка" width="180" height="139">
                 <img loading="lazy" class="help__img" src="img/image-4-small.jpg" alt="Собака показывает язык" width="180" height="139">
                 <img loading="lazy" class="help__img" src="img/dog-in-gips.jpg" alt="Собака в ветеринарном воротнике" width="380"
                   height="298">
-                </figure>
+              </figure>
               <div class="swiper help__swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
@@ -303,6 +308,82 @@
                       alt="Собака в ветеринарном воротнике" width="380" height="298"></div>
                   ...
                 </div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-button swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
+          </li>
+          <li tabindex="0" class="help__item">
+            <div class="help__subtitle help__subtitle_2">
+              <div class="help__number-plate">
+                <p class="help__number">2</p>
+              </div>
+              <h3 class="subtitle">
+                Стать волонтером
+              </h3>
+            </div>
+            <div class="help__wrapper">
+              <picture class="help__img">
+                <source srcset="img/girl-and-dog.avif" type="image/avif" />
+                <source srcset="img/girl-and-dog.webp" type="image/avif/webp" />
+                <img loading="lazy" src="img/girl-and-dog.jpg" alt="Девочка и собака" width="580" height="349">
+              </picture>
+              <div class="help__texts">
+                <p class="help__text">
+                  Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи
+                  и
+                  набирающего популярность интеллектуального волонтерства до помощи руками.
+                  </p>
+                  <p class="help__text">
+                    Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с
+                    перевозкой животных в клиники, забрать и привезти вещи и много всего другого. Мы всегда рады любой помощи.
+                  </p>
+                  </div>
+                  </div>
+          </li>
+          <li tabindex="0" class="help__item">
+            <div class="help__subtitle">
+              <div class="help__number-plate help__number-plate_3">
+                <p class="help__number">3</p>
+              </div>
+              <h3 class="subtitle help__subtitle">
+                Стать опекуном
+              </h3>
+            </div>
+            <div class="help__wrapper">
+            <div class="help__info">
+            <div class="help__texts">
+              <p class="help__text help__text_less">
+                Хотите друга, но не можете взять домой? Проект опеки - идеальное решение!
+              </p>
+              <p class="help__text help__text_less">
+                Bзять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не
+                мог себе этого позволить по&nbsp;каким-либо причинам.</p>
+            </div>
+            </div>
+            
+            <figure class="help__images">
+              <img loading="lazy" class="help__image" src="img/cat-meo.jpg" alt="Кошка мяукает" width="280" height="382">
+              <img loading="lazy" class="help__image" src="img/cat-finger.jpg" alt="Кот ловит палец хозяйки" width="280" height="180">
+              <img loading="lazy" class="help__image" src="img/frandsheep.jpg" alt="Человек с собакой" width="280" height="180">
+              </figure>
+              <div class="swiper help__swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/cat-meo.jpg" alt="Кошка мяукает"
+                      width="180" height="139"></div>
+                  <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/cat-finger.jpg"
+                      alt="Кот ловит палец хозяйки" width="180" height="139"></div>
+                  <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/frandsheep.jpg" alt="Человек с собакой" в
+                      ветеринарном воротник width="380" height="298"></div>
+                  ...
+                </div>
               
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button swiper-button-prev"></div>
@@ -313,80 +394,9 @@
               </div>
               </div>
           </li>
-          <li tabindex="0" class="help__item">
-              <div class="help__subtitle help__subtitle_2">
-                <div class="help__number-plate">
-                  <p class="help__number">2</p>
-                </div>
-                <h3 class="subtitle">
-                  Стать волонтером
-                </h3>
-              </div>
-              
-              <div class="help__wrapper">
-                <picture class="help__img">
-                  <source srcset="img/girl-and-dog.avif" type="image/avif" />
-                  <source srcset="img/girl-and-dog.webp" type="image/avif/webp" />
-                  <img loading="lazy" src="img/girl-and-dog.jpg" alt="Девочка и собака" width="580" height="349">
-                </picture>
-                  <div class="help__texts">
-                    <p class="help__text">
-                      Наш приют "Friendly House" привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и
-                      набирающего популярность интеллектуального волонтерства до помощи руками.
-                    </p>
-                    <p class="help__text">
-                      Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с
-                      перевозкой животных в клиники, забрать и привезти вещи и много всего другого. Мы всегда рады любой помощи.
-                    </p>
-                    </div>
-              </div>
-          </li>
-          <li tabindex="0" class="help__item">
-              <div class="help__subtitle">
-                <div class="help__number-plate help__number-plate_3">
-                  <p class="help__number">3</p>
-                </div>
-                <h3 class="subtitle help__subtitle">
-                  Стать опекуном
-                </h3>
-              </div>
-              <div class="help__wrapper">
-                  <div class="help__texts">
-                    <p class="help__text help__text_less">
-                      Хотите друга, но не можете взять домой? Проект опеки - идеальное решение!
-                    </p>
-                    <p class="help__text help__text_less">
-                      Bзять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не
-                      мог себе этого позволить по&nbsp;каким-либо причинам.</p>
-                    </div>
-                    <figure class="help__images help__images_com">
-                      <img loading="lazy" class="help__image" src="img/cat-meo.jpg" alt="Кошка мяукает" width="280" height="382">
-                      <img loading="lazy" class="help__image" src="img/cat-finger.jpg" alt="Кот ловит палец хозяйки" width="280" height="181">
-                      <img loading="lazy" class="help__image" src="img/frandsheep.jpg" alt="Человек с собакой" width="280" height="181">
-                      </figure>
-                    <div class="swiper help__swiper">
-                      <!-- Additional required wrapper -->
-                      <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/cat-meo.jpg" alt="Кошка мяукает"
-                            width="180" height="139"></div>
-                        <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/cat-finger.jpg"
-                            alt="Кот ловит палец хозяйки" width="180" height="139"></div>
-                        <div class="swiper-slide"><img loading="lazy" class="help__img" src="img/frandsheep.jpg" alt="Человек с собакой" в
-                            ветеринарном воротник width="380" height="298"></div>
-                        ...
-                      </div>
-                    
-                      <!-- If we need navigation buttons -->
-                      <div class="swiper-button swiper-button-prev"></div>
-                      <div class="swiper-button swiper-button-next"></div>
-                    
-                      <!-- If we need scrollbar -->
-                      <div class="swiper-scrollbar"></div>
-                    </div>
-                    </div>
-          </li>
+          
         </ul>
+        
         <div class="help__wrap">
           <button class="paw-button" aria-label="Открыть модальное окно">
             <a href="#modal">
@@ -395,8 +405,7 @@
             <p class="howto">Жми на лапку, чтобы помочь!</p>
           </button>
         </div>
-        
-        </div>
+      </div>
     </section>
     <section class="section pet">
       <div class="container pet__container">

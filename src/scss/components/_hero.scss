@@ -22,7 +22,7 @@
 		@media (max-width: 450px) {
 			flex-direction: column;
 			justify-content: flex-start;
-			align-items: center;
+			align-items: flex-start;
 		}
 	}
 	&__panel {
@@ -140,7 +140,7 @@
 		@media (max-width: 904px) {
 			max-width: 140px;
 			padding-top: 56px;
-			padding-top: 41px;
+			padding-left: 41px;
 			gap: 15px;
 			
 		}
@@ -166,8 +166,9 @@
 		height: 126px;
 	}
 	@media (max-width: 450px)  {
-		max-width: 84px;
-		height: 78px;
+		max-width: 190px;
+		height: 80px;
+		padding-left: 70px;
 	}
 	&__howto {
 		width: 100%;
@@ -202,6 +203,10 @@
 	&__img {
 		width: 80px;
 		height: 80px;
+		@media (max-width: 450px) {
+			width: 60px;
+			height: 60px;
+		}
 	}
 	&__name {
 		color: $color-primary;

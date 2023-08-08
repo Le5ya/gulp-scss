@@ -31,7 +31,7 @@
 			grid-template-columns: 22% 21% 21% 32%;
 			gap: 40px 10px;
 		}
-		@media (max-width: 902px) {
+		@media (max-width: 909px) {
 			display: none;
 		}
 	}
@@ -144,7 +144,7 @@
 	}
 	&__swiper {
 		display: none;
-			@media (max-width: 902px) {
+			@media (max-width: 909px) {
 				display: block;
 				position: relative;
 				max-width: 700px;

@@ -8,15 +8,18 @@
       grid-template-columns: 580px 280px;
       gap: 20px;
     }
-    @media (max-width: 900px) {
+    @media (max-width: 904px) {
       max-width: 700px;
-      grid-template-columns: 400px auto;
-      gap: 6px;
+      grid-template-columns: 56% 40%;
+      gap: 20px;
+    }
+    @media (max-width: 660px) {
+      max-width: 600px;
+      grid-template-columns: 100%;
+      row-gap: 20px;
     }
     @media (max-width: 450px) {
-      max-width: 270px;
-      grid-template-columns: 270px;
-      row-gap: 20px;  
+      max-width: 270px;  
     }
   }
   &-list {
@@ -24,14 +27,14 @@
     grid-template-rows: repeat(4, 180px);
     gap: 30px;
     @media (max-width: 1040px) {
-      grid-template-rows: repeat(4, 130px);
+      grid-template-rows: repeat(4, 167px);
       gap: 20px;
     }
     @media (max-width: 904px) {
       grid-template-rows: repeat(4, 130px);
     }
     @media (max-width: 450px) {
-      grid-template-rows: repeat(4 134px);;
+      grid-template-rows: repeat(4, 134px);
     }
   }
   &__title {
@@ -50,6 +53,14 @@
       gap: 52px;
       @media (max-width: 1040px) {
         gap: 33px;
+      }
+      @media (max-width: 660px) {
+        grid-template-columns: repeat(2, 50%);
+        gap: 20px;
+      }
+      @media (max-width: 450px) {
+        grid-template-columns: 100%;
+        gap: 20px;
       }
     }
   }
@@ -72,7 +83,7 @@
    @media (max-width: 450px) {
     max-width: 270px;
     grid-template-columns: 130px 130px; 
-    gap: 20px;
+    gap: 10px;
    }
   &__subtitle {
     font-family: 'Helvetica Neue Cyr Heavy', sans-serif;
@@ -133,21 +144,32 @@
 }
 .anonce {
   position: relative;
-  &__link{
-    //position: absolute;
-    //top: 224px;
-    //left: calc(50%);
+  &__link {
     display: none;
     @media (max-width: 1040px) {
       position: absolute;
       top: 200px;
       left: calc(45%);
       display: block;
+    }
+    @media (max-width: 904px) {
+      font-size: 14px;
+      line-height: 143%;
+      top: 218px;
+      left: 25%;
+    }
+    @media (max-width: 450px) {
+      top: 89px;
+      left: 25%;
+    }
+    &:after {
       @media (max-width: 904px) {
-        font-size: 14px;
-        line-height: 143%;
-        top: 190px;
-        left: calc(50% - 52px);
+        top: 2px;
+        left: 100%;
+      }
+      @media (max-width: 450px) {
+        top: 0;
+        left: 90px;
       }
     }
   }
@@ -165,7 +187,7 @@
       max-width: 220px;
       max-height: 160px;
       grid-template-columns: repeat(3, 60px);
-      grid-template-rows: repeat(2, 70px);
+      grid-template-rows: repeat(2, 60px);
       overflow: hidden;
       gap: 20px;
     }
@@ -192,7 +214,7 @@
     @media (max-width: 904px) {
       font-size: 18px;
       line-height: 133%;
-      margin-bottom: 6px;
+      margin-bottom: 40px;
     }
     @media (max-width: 450px) {
        font-weight: bold;
@@ -238,7 +260,13 @@
       top: 153px;
       left: 0;
     }
+    &:after {
+      @media (max-width: 904px) {
+        left: calc(100% - 115px);
+      }  
+    }
   }
+
 }
 .bunner {
   &__img {
@@ -252,6 +280,26 @@
     } 
   }
   &__title {
+    position: absolute;
+    font-family: 'HelveticaNeueCyr';
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 133%;
+    color: $color-white;
+    max-width: 261px;
+    top: 330px;
+    left: 20px;
+    @media (max-width: 1040px) {
+      position: absolute;
+      font-family: 'HelveticaNeueCyr';
+      font-weight: 550;
+      font-size: 20px;
+      line-height: 133%;
+      color: $color-white;
+      max-width: 210px;
+      top: 340px;
+      left: 20px;
+    }
     @media (max-width: 904px) {
       position: absolute;
       font-family: 'HelveticaNeueCyr';
@@ -263,13 +311,24 @@
       top: 163px;
       left: 20px;
     }
+    @media (max-width: 450px) {
+      top: 254px;
+      font-size: 16px;
+      line-height: 137.5%;
+    }
   }
   &__link {
     @media (max-width: 904px) {
       top: 0;
       left: 80px;
     }
-   
+    @media (max-width: 660px) {
+      bottom: 10px;
+      left: 80px;
+    }
+    &:after {
+      left: 100%; 
+    }
     
   }
 }
@@ -309,6 +368,22 @@
       @media (max-width: 904px) {
         display: none;
       }
+    }
+  }
+  &__link {
+    &:after {
+      left: 100%;
+      @media (max-width: 904px) {
+        left: calc(100% - 149px);
+        top: 2px;
+      }
+      @media (max-width: 450px) {
+        left: calc(100% - 49px);
+      }
+    }
+    @media (max-width: 904px) {
+      font-size: 14px;
+      line-height: 143%;
     }
   }
 }
