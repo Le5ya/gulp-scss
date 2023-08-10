@@ -152,6 +152,13 @@
 	}
 	&__thumb {
 		text-align: center;
+		&:hover {
+			border: 1px solid $color-main;
+		}
+		&:focus {
+			color: $color-main;
+			border: 1px solid $color-main;
+		}
 	}
 }
 .paw-button {

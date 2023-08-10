@@ -71,6 +71,12 @@
   justify-content: space-between; 
   vertical-align: top;
   gap: 20px;
+  &:hover {
+    border: 1px solid $color-main;
+  }
+  &:focus {
+    border: 1px solid $color-main;
+  }
   @media (max-width: 1040px) {
     grid-template-columns: auto 360px; 
     vertical-align: top;

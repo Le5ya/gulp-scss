@@ -51,9 +51,20 @@ function init() {
   });
   const mark = new ymaps.Placemark([55.848271, 37.375360], {}, {
     iconLayout: 'default#image',
-    iconImageHref: 'img/mark.svg'
+    iconImageHref: 'img/mark.svg',
+    iconImageSize: [39, 59]
   })
 
-  myMap.geoObjects.add(mark)
+  myMap.geoObjects.add(mark);
+
+  mark.events
+    .add('hover', function (e) {
+      e.get('target').options.set('iconImageSize', [49, 75]);
+    })
+
+  
 }
+
+
+
 
